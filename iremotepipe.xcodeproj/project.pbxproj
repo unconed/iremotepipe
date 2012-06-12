@@ -7,27 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B0B6E5A115872C3400F95D79 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = B0B6E5A015872C3400F95D79 /* main.c */; };
-		B0B6E5A315872C3400F95D79 /* iremotepipe.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B0B6E5A215872C3400F95D79 /* iremotepipe.1 */; };
+		B052689315874D5500D1C6B5 /* AppleRemote.m in Sources */ = {isa = PBXBuildFile; fileRef = B052688E15874D5500D1C6B5 /* AppleRemote.m */; };
+		B052689415874D5500D1C6B5 /* AppleRemoteDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B052689015874D5500D1C6B5 /* AppleRemoteDelegate.m */; };
+		B052689515874D5500D1C6B5 /* iremotepipe.m in Sources */ = {isa = PBXBuildFile; fileRef = B052689215874D5500D1C6B5 /* iremotepipe.m */; };
+		B0B6E5B815873E5D00F95D79 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B6E5B715873E5D00F95D79 /* Cocoa.framework */; };
+		B0B6E5BA15873E6800F95D79 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B6E5B915873E6800F95D79 /* Foundation.framework */; };
+		B0B6E5BC15873E8100F95D79 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B6E5BB15873E8100F95D79 /* IOKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		B0B6E59A15872C3400F95D79 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
-				B0B6E5A315872C3400F95D79 /* iremotepipe.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B052688D15874D5500D1C6B5 /* AppleRemote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppleRemote.h; path = src/AppleRemote.h; sourceTree = SOURCE_ROOT; };
+		B052688E15874D5500D1C6B5 /* AppleRemote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppleRemote.m; path = src/AppleRemote.m; sourceTree = SOURCE_ROOT; };
+		B052688F15874D5500D1C6B5 /* AppleRemoteDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppleRemoteDelegate.h; path = src/AppleRemoteDelegate.h; sourceTree = SOURCE_ROOT; };
+		B052689015874D5500D1C6B5 /* AppleRemoteDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppleRemoteDelegate.m; path = src/AppleRemoteDelegate.m; sourceTree = SOURCE_ROOT; };
+		B052689115874D5500D1C6B5 /* CompatibilityFixes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CompatibilityFixes.h; path = src/CompatibilityFixes.h; sourceTree = SOURCE_ROOT; };
+		B052689215874D5500D1C6B5 /* iremotepipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iremotepipe.m; path = src/iremotepipe.m; sourceTree = SOURCE_ROOT; };
 		B0B6E59C15872C3400F95D79 /* iremotepipe */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = iremotepipe; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0B6E5A015872C3400F95D79 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		B0B6E5A215872C3400F95D79 /* iremotepipe.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = iremotepipe.1; sourceTree = "<group>"; };
+		B0B6E5B715873E5D00F95D79 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B0B6E5B915873E6800F95D79 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B0B6E5BB15873E8100F95D79 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +45,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0B6E5BC15873E8100F95D79 /* IOKit.framework in Frameworks */,
+				B0B6E5BA15873E6800F95D79 /* Foundation.framework in Frameworks */,
+				B0B6E5B815873E5D00F95D79 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +57,9 @@
 		B0B6E59115872C3400F95D79 = {
 			isa = PBXGroup;
 			children = (
+				B0B6E5BB15873E8100F95D79 /* IOKit.framework */,
+				B0B6E5B915873E6800F95D79 /* Foundation.framework */,
+				B0B6E5B715873E5D00F95D79 /* Cocoa.framework */,
 				B0B6E59F15872C3400F95D79 /* iremotepipe */,
 				B0B6E59D15872C3400F95D79 /* Products */,
 			);
@@ -60,8 +76,12 @@
 		B0B6E59F15872C3400F95D79 /* iremotepipe */ = {
 			isa = PBXGroup;
 			children = (
-				B0B6E5A015872C3400F95D79 /* main.c */,
-				B0B6E5A215872C3400F95D79 /* iremotepipe.1 */,
+				B052688D15874D5500D1C6B5 /* AppleRemote.h */,
+				B052688E15874D5500D1C6B5 /* AppleRemote.m */,
+				B052688F15874D5500D1C6B5 /* AppleRemoteDelegate.h */,
+				B052689015874D5500D1C6B5 /* AppleRemoteDelegate.m */,
+				B052689115874D5500D1C6B5 /* CompatibilityFixes.h */,
+				B052689215874D5500D1C6B5 /* iremotepipe.m */,
 			);
 			path = iremotepipe;
 			sourceTree = "<group>";
@@ -116,7 +136,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0B6E5A115872C3400F95D79 /* main.c in Sources */,
+				B052689315874D5500D1C6B5 /* AppleRemote.m in Sources */,
+				B052689415874D5500D1C6B5 /* AppleRemoteDelegate.m in Sources */,
+				B052689515874D5500D1C6B5 /* iremotepipe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +223,7 @@
 				B0B6E5A815872C3400F95D79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
