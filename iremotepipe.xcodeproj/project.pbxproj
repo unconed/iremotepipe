@@ -1,0 +1,208 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B0B6E5A115872C3400F95D79 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = B0B6E5A015872C3400F95D79 /* main.c */; };
+		B0B6E5A315872C3400F95D79 /* iremotepipe.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B0B6E5A215872C3400F95D79 /* iremotepipe.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B0B6E59A15872C3400F95D79 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				B0B6E5A315872C3400F95D79 /* iremotepipe.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B0B6E59C15872C3400F95D79 /* iremotepipe */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = iremotepipe; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0B6E5A015872C3400F95D79 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		B0B6E5A215872C3400F95D79 /* iremotepipe.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = iremotepipe.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B0B6E59915872C3400F95D79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B0B6E59115872C3400F95D79 = {
+			isa = PBXGroup;
+			children = (
+				B0B6E59F15872C3400F95D79 /* iremotepipe */,
+				B0B6E59D15872C3400F95D79 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B0B6E59D15872C3400F95D79 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0B6E59C15872C3400F95D79 /* iremotepipe */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0B6E59F15872C3400F95D79 /* iremotepipe */ = {
+			isa = PBXGroup;
+			children = (
+				B0B6E5A015872C3400F95D79 /* main.c */,
+				B0B6E5A215872C3400F95D79 /* iremotepipe.1 */,
+			);
+			path = iremotepipe;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B0B6E59B15872C3400F95D79 /* iremotepipe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0B6E5A615872C3400F95D79 /* Build configuration list for PBXNativeTarget "iremotepipe" */;
+			buildPhases = (
+				B0B6E59815872C3400F95D79 /* Sources */,
+				B0B6E59915872C3400F95D79 /* Frameworks */,
+				B0B6E59A15872C3400F95D79 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iremotepipe;
+			productName = iremotepipe;
+			productReference = B0B6E59C15872C3400F95D79 /* iremotepipe */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B0B6E59315872C3400F95D79 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = B0B6E59615872C3400F95D79 /* Build configuration list for PBXProject "iremotepipe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B0B6E59115872C3400F95D79;
+			productRefGroup = B0B6E59D15872C3400F95D79 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B0B6E59B15872C3400F95D79 /* iremotepipe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B0B6E59815872C3400F95D79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0B6E5A115872C3400F95D79 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B0B6E5A415872C3400F95D79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B0B6E5A515872C3400F95D79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B0B6E5A715872C3400F95D79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B0B6E5A815872C3400F95D79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B0B6E59615872C3400F95D79 /* Build configuration list for PBXProject "iremotepipe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0B6E5A415872C3400F95D79 /* Debug */,
+				B0B6E5A515872C3400F95D79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0B6E5A615872C3400F95D79 /* Build configuration list for PBXNativeTarget "iremotepipe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0B6E5A715872C3400F95D79 /* Debug */,
+				B0B6E5A815872C3400F95D79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B0B6E59315872C3400F95D79 /* Project object */;
+}
