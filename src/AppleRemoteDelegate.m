@@ -86,6 +86,7 @@
     
     printf("{\"type\":\"%s\",\"hold\":%s,\"pressed\":%s}\n",
         buttonName, hold ? True : False, pressedDown ? True : False);
+    fflush(NULL);
 }
 
 @end
