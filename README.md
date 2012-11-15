@@ -4,11 +4,11 @@ iremotepipe
 ![iremotepipe](https://raw.github.com/unconed/iremotepipe/master/iremotepipe.png)
 
 A command-line tool for Mac OS X that interfaces with Apple Infrared remotes
-and outputs all button presses.
+and outputs all button presses. Intercepts all IR commands while running. Kill the process to stop listening.
+
+Also includes a simple node.js based server (iremote.js) which serves the detected events on a WebSocket.
 
 Based on VLC's AppleRemote code, licensed under the GPL.
-
-Intercepts all IR commands while running. Kill the process to stop listening.
 
 output format
 -------------
