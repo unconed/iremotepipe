@@ -27,4 +27,29 @@ e.g. Holding and releasing "right" (next)
 Available keys are `play`, `up`, `down`, `left`, `right`, `menu` and `ok` (newer remotes only). Holding `play` will generate a `sleep` button press.
 
 
+websocket control
+------
+
+You can receive commands over a WebSocket as JSON packets. For example, to control a Deck.js slideshow:
+
+```javascript
+    var host = window.document.location.host.replace(/:.*/, '');
+    var ws = new WebSocket('ws://' + host + ':8080');
+    ws.onmessage = function (event) {
+      var data = JSON.parse(event.data);
+      var command = {
+          up:    'prev',
+          left:  'prev',
+          right: 'next',
+          down:  'next',
+          play:  'next',
+        }[data.type];
+
+      if (command) {
+        $.deck(command);
+      }
+    };
+```
+
+
 Steven Wittens - http://acko.net/
